@@ -7,17 +7,16 @@ import Container from "@/components/ui/Container";
 import SectionWrapper from "@/components/ui/SectionWrapper";
 
 const stats = [
-  { id: 1, name: "Content Moderated", value: "10M+", icon: FileCheck2 },
-  { id: 2, name: "Accuracy Rate", value: "99.9%", icon: ShieldCheck },
-  { id: 3, name: "Global Clients", value: "50+", icon: Globe },
-  { id: 4, name: "Active Monitoring", value: "24/7", icon: Clock4 },
+  { id: 1, name: "Accuracy Monitoring", value: "99.9%", icon: ShieldCheck },
+  { id: 2, name: "Active Monitoring", value: "24/7", icon: Clock4 },
+  { id: 3, name: "Multilingual Support", value: "Global", icon: Globe },
 ];
 
 export default function StatsSection() {
   return (
     <SectionWrapper id="stats" bg="white" spacing="minor" className="border-b border-gray-100 bg-gradient-to-b from-transparent to-gray-50/50">
       <Container>
-        <dl className="grid grid-cols-1 gap-x-8 gap-y-12 sm:gap-y-16 text-center lg:grid-cols-4 sm:grid-cols-2">
+        <dl className="grid grid-cols-1 gap-x-8 gap-y-12 sm:gap-y-16 text-center lg:grid-cols-3 sm:grid-cols-2">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.id}

@@ -45,7 +45,7 @@ export default function Navbar() {
                 {/* TODO: Replace with official ContentShield logo */}
                 <Image
                   src="/LOGO.png"
-                  // alt="ContentShield Logo"
+                  alt="ContentShield Logo"
                   width={180}
                   height={180}
                   className="rounded-lg object-contain"
@@ -73,11 +73,21 @@ export default function Navbar() {
               })}
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-              <Link href="/#contact">
+              <a 
+                href="/#contact"
+                onClick={(e) => {
+                  const contactSection = document.getElementById('contact');
+                  if (contactSection) {
+                    e.preventDefault();
+                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                    setMobileMenuOpen(false);
+                  }
+                }}
+              >
                 <Button variant="primary" size="sm" className="shadow-sm">
                   Book Consultation
                 </Button>
-              </Link>
+              </a>
             </div>
 
             {/* Mobile menu button */}
@@ -153,11 +163,21 @@ export default function Navbar() {
                     })}
                   </div>
                   <div className="py-6">
-                    <Link href="/#contact" onClick={() => setMobileMenuOpen(false)}>
+                    <a 
+                      href="/#contact" 
+                      onClick={(e) => {
+                        const contactSection = document.getElementById('contact');
+                        if (contactSection) {
+                          e.preventDefault();
+                          contactSection.scrollIntoView({ behavior: 'smooth' });
+                          setMobileMenuOpen(false);
+                        }
+                      }}
+                    >
                       <Button className="w-full justify-center">
                         Book Consultation
                       </Button>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>

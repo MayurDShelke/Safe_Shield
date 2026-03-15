@@ -46,7 +46,19 @@ export default function HeroSection() {
               AI + Human powered moderation services to keep digital platforms safe, compliant, and thriving in real-time. Block toxicity before it reaches your users.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <Button size="lg" className="w-full sm:w-auto shadow-lg shadow-blue-600/20">Book Consultation</Button>
+              <a 
+                href="/#contact"
+                onClick={(e) => {
+                  const contactSection = document.getElementById('contact');
+                  if (contactSection) {
+                    e.preventDefault();
+                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="w-full sm:w-auto"
+              >
+                <Button size="lg" className="w-full shadow-lg shadow-blue-600/20">Book Consultation</Button>
+              </a>
               <Button variant="secondary" size="lg" className="w-full sm:w-auto">Explore Services</Button>
             </div>
             

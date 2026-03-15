@@ -13,9 +13,9 @@ const features = [
     description: "Benefit from the raw speed of our ML models seamlessly combined with the highly nuanced cultural understanding of our global human experts." 
   },
   { 
-    name: "True Multilingual", 
+    name: "Multilingual Moderation", 
     icon: Globe2, 
-    description: "Native-level support for over 50+ languages ensuring your global platforms remain comprehensively safe in absolutely any region or dialect." 
+    description: "Multilingual moderation support across global platforms." 
   },
   { 
     name: "Millisecond Monitoring", 

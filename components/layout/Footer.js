@@ -35,24 +35,19 @@ export default function Footer() {
       </h2>
       <Container className="pb-8 pt-16 sm:pt-24 lg:pt-32">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 xl:gap-8">
-          
+
           {/* Column 1 - Company */}
           <div className="space-y-8">
             <Link href="/" className="flex items-center gap-2 group">
               <Image
                 src="/LOGO.png"
                 alt="ContentShield Logo"
-                width={32}
-                height={32}
+                width={120}
+                height={120}
                 className="rounded-lg grayscale brightness-200"
               />
-              <span className="font-outfit font-bold text-xl tracking-tight text-white">
-                ContentShield
-              </span>
+
             </Link>
-            <p className="text-sm leading-6 text-gray-400">
-              ContentShield provides AI + human moderation solutions to keep digital platforms safe and compliant.
-            </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (
                 <a key={item.name} href={item.href} className="text-gray-500 hover:text-white transition-colors">
@@ -93,31 +88,31 @@ export default function Footer() {
 
           {/* Column 4 - Contact */}
           <div>
-             <h3 className="text-sm font-semibold leading-6 text-white font-outfit">Contact</h3>
-             <ul role="list" className="mt-6 space-y-4">
-               <li>
-                 <div className="flex items-center gap-3 text-gray-400">
-                   <Mail className="h-5 w-5 text-gray-500 flex-shrink-0" />
-                   <a href="mailto:abc@safeshield.com" className="text-sm hover:text-white transition-colors break-all">
-                     abc@safeshield.com
-                   </a>
-                 </div>
-               </li>
-               <li>
-                 <div className="flex items-center gap-3 text-gray-400">
-                   <MapPin className="h-5 w-5 text-gray-500 flex-shrink-0" />
-                   <span className="text-sm">Mumbai, India</span>
-                 </div>
-               </li>
-               <li>
-                 <div className="flex items-center gap-3 text-gray-400">
-                   <Globe className="h-5 w-5 text-gray-500 flex-shrink-0" />
-                   <a href="https://safeshield.com" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-white transition-colors">
-                     safeshield.com
-                   </a>
-                 </div>
-               </li>
-             </ul>
+            <h3 className="text-sm font-semibold leading-6 text-white font-outfit">Contact</h3>
+            <ul role="list" className="mt-6 space-y-4">
+              <li>
+                <div className="flex items-center gap-3 text-gray-400">
+                  <Mail className="h-5 w-5 text-gray-500 flex-shrink-0" />
+                  <a href="mailto:abc@safeshield.com" className="text-sm hover:text-white transition-colors break-all">
+                    abc@safeshield.com
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div className="flex items-center gap-3 text-gray-400">
+                  <MapPin className="h-5 w-5 text-gray-500 flex-shrink-0" />
+                  <span className="text-sm">Mumbai, India</span>
+                </div>
+              </li>
+              <li>
+                <div className="flex items-center gap-3 text-gray-400">
+                  <Globe className="h-5 w-5 text-gray-500 flex-shrink-0" />
+                  <a href="https://safeshield.com" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-white transition-colors">
+                    safeshield.com
+                  </a>
+                </div>
+              </li>
+            </ul>
           </div>
 
         </div>
